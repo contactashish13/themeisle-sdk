@@ -384,7 +384,7 @@ class Product {
 	 * Returns the URL of the product base file.
 	 *
 	 * @param string $path The path to the file.
-	 * 
+	 *
 	 * @return string The URL of the product base file.
 	 */
 	public function get_base_url( $path = '/' ) {

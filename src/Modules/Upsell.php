@@ -32,7 +32,7 @@ class Upsell extends Abstract_Module {
 	 * @param Product $product Product to load.
 	 */
 	public function load( $product ) {
-		$this->product     = $product;
+		$this->product = $product;
 		$this->setup_hooks();
 
 		return $this;
@@ -353,9 +353,9 @@ class Upsell extends Abstract_Module {
 			return;
 		}
 
-		wp_enqueue_style( 'ti-plugin-style', $this->product->get_base_url('vendor/codeinwp/themeisle-sdk/assets/css/upsell.css' ), array(), Loader::get_version() );
+		wp_enqueue_style( 'ti-plugin-style', $this->product->get_base_url( 'vendor/codeinwp/themeisle-sdk/assets/css/upsell.css' ), array(), Loader::get_version() );
 
-		wp_register_script( 'ti-plugin-install', $this->product->get_base_url('vendor/codeinwp/themeisle-sdk/assets/js/plugin-install.js' ), array( 'jquery' ), Loader::get_version(), true );
+		wp_register_script( 'ti-plugin-install', $this->product->get_base_url( 'vendor/codeinwp/themeisle-sdk/assets/js/plugin-install.js' ), array( 'jquery' ), Loader::get_version(), true );
 
 		wp_localize_script(
 			'ti-plugin-install',
