@@ -55,6 +55,7 @@ final class Loader {
 		'logger',
 		'translate',
 		'review',
+		'upsell',
 
 	];
 
@@ -111,6 +112,15 @@ final class Loader {
 	 */
 	public static function get_products() {
 		return self::$products;
+	}
+
+	/**
+	 * Get the version of the SDK.
+	 *
+	 * @return string The version.
+	 */
+	public static function get_version() {
+		return self::$version;
 	}
 
 
